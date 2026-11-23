@@ -1,0 +1,5 @@
+Fontes usadas no site (ambas livres para uso comercial e para embutir em sites):
+
+- Figtree (Erik Kennedy) — SIL Open Font License 1.1. Texto completo em figtree.LICENSE.txt.
+- Montserrat ExtraBold (The Montserrat Project Authors) — SIL Open Font License 1.1.
+  https://openfontlicense.org  ·  https://github.com/JulietaUla/Montserrat
