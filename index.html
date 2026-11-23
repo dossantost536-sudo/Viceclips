@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VICE CLIPS · Cortes de live prontos para postar</title>
+<meta name="description" content="O VICE CLIPS assiste à live por você, escolhe os melhores momentos, corta em pé com legenda e agenda no seu canal do YouTube. Funciona com YouTube, Twitch, Kick e vídeos do PC. Tudo roda no seu computador.">
+<meta name="theme-color" content="#1b1b1b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VICE CLIPS · Cortes de live prontos para postar">
+<meta property="og:description" content="Live vira corte em pé com legenda, escolhido por nota e agendado no seu canal. Para Windows.">
+<meta property="og:image" content="assets/img/capa.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/estilo.css">
+<script src="assets/js/config.js"></script>
+</head>
+<body>
+<a class="pular btn" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13l10.5-6.5z"/></symbol>
+  <symbol id="i-baixar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-windows" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5.6 10.3 4.6v7H3zm8.3-1.1L21 3v8.6h-9.7zM3 12.5h7.3v7L3 18.4zm8.3 0H21V21l-9.7-1.4z"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 5 6v5.5c0 4.2 3 7.8 7 9.5 4-1.7 7-5.3 7-9.5V6z"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2.5V6m6-3.5V6M9 18v3.5m6-3.5v3.5M2.5 9H6m-3.5 6H6m12-6h3.5M18 15h3.5"/></g></symbol>
+  <symbol id="i-estrela" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="i-celular" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path stroke-linecap="round" d="M10.5 18.5h3"/></g></symbol>
+  <symbol id="i-legenda" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M7 12.5h4m2 0h4M7 15.5h6"/></g></symbol>
+  <symbol id="i-tesoura" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6.5" r="2.5"/><circle cx="6" cy="17.5" r="2.5"/><path d="M8 8.2 20 18M8 15.8 20 6"/></g></symbol>
+  <symbol id="i-agenda" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4m8-4v4m-6.5 7.5 2 2 4-4"/></g></symbol>
+  <symbol id="i-camadas" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></g></symbol>
+  <symbol id="i-pessoa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+  <symbol id="i-sem-nuvem" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7.5 18.5h10a3.5 3.5 0 0 0 .8-6.9A6 6 0 0 0 7 9.6a4.5 4.5 0 0 0 .5 8.9z"/><path d="m3 3 18 18"/></g></symbol>
+</svg>
+
+<div class="ambiente" aria-hidden="true"></div>
+
+<div class="pagina">
+  <header class="topo envelope">
+    <div class="barra vidro">
+      <a class="marca" href="#inicio" aria-label="VICE CLIPS, início">
+        <span class="simbolo" aria-hidden="true"><svg><use href="#i-play"/></svg></span><b>VICE CLIPS</b>
+      </a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#o-que-faz">O que faz</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#perguntas">Perguntas</a>
+      </nav>
+      <a class="btn principal" href="#baixar" data-download><svg aria-hidden="true"><use href="#i-baixar"/></svg>Baixar</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- herói -->
+    <section class="envelope heroi" id="inicio">
+      <div>
+        <span class="chip ao-vivo"><span class="ponto"></span>Para lives de GTA e qualquer gameplay</span>
+        <h1>Sua live vira <em>cortes prontos</em> para postar.</h1>
+        <p class="lead">O VICE CLIPS assiste à live por você, escolhe os melhores momentos, corta em pé com legenda e agenda tudo no seu canal. Você só cola o link.</p>
+        <div class="acoes">
+          <a class="btn principal grande" href="#baixar" data-download><svg aria-hidden="true"><use href="#i-windows"/></svg>Baixar para Windows</a>
+          <a class="btn grande" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <div class="meta">
+          <span><svg aria-hidden="true"><use href="#i-windows"/></svg>Windows 10 e 11</span>
+          <span><svg aria-hidden="true"><use href="#i-sem-nuvem"/></svg>Roda no seu PC, sem nuvem</span>
+          <span><svg aria-hidden="true"><use href="#i-escudo"/></svg>Instala sem senha de administrador</span>
+        </div>
+      </div>
+
+      <div class="vitrine" aria-label="Prévia do VICE CLIPS: a lista de cortes prontos e um corte em pé no celular" role="img">
+        <div class="janela" aria-hidden="true">
+          <div class="lado">
+            <div class="mini-marca"><span class="simbolo"><svg><use href="#i-play"/></svg></span>VICE CLIPS</div>
+            <i>Painel</i><i>Cortar vídeos</i><i class="ativo">Cortes prontos</i><i>Agendar</i><i>Configurações</i>
+          </div>
+          <div class="conteudo">
+            <div class="titulo-j">Cortes prontos</div>
+            <div class="sub-j">Live de ontem · 24 cortes</div>
+            <div class="grade-mini">
+              <div class="mini-corte"><div class="q cena-1"><i class="cam"></i><b>ELE NÃO ESPERAVA ISSO</b><span class="n">nota 91</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-2"><i class="cam"></i><b>FUGA DA POLÍCIA</b><span class="n">nota 88</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-3"><i class="cam"></i><b>O CHAT FOI À LOUCURA</b><span class="n">nota 84</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-4"><i class="cam"></i><b>QUE SUSTO</b><span class="n">nota 79</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-5"><i class="cam"></i><b>NÃO ACREDITO</b><span class="n">nota 77</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-6"><i class="cam"></i><b>DEU TUDO CERTO</b><span class="n">nota 74</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-2"><i class="cam"></i><b>OLHA ISSO</b><span class="n">nota 71</span></div><div class="r"><i></i><i></i></div></div>
+              <div class="mini-corte"><div class="q cena-1"><i class="cam"></i><b>FOI POR POUCO</b><span class="n">nota 70</span></div><div class="r"><i></i><i></i></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="celular" aria-hidden="true">
+          <div class="tela">
+            <div class="cam"></div><div class="jogo"></div>
+            <span class="logo-c">seu canal</span>
+            <div class="leg" data-legenda="ELE NÃO|ESPERAVA ISSO|O CHAT|FOI À LOUCURA|FUGA DA|POLÍCIA AGORA"><span>ELE NÃO</span></div>
+            <div class="barra-yt"><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="selo-flut s1 vidro" aria-hidden="true"><span class="ico"><svg><use href="#i-estrela"/></svg></span><div><b>Nota 91</b><small>Fuga da polícia</small></div></div>
+        <div class="selo-flut s2 vidro" aria-hidden="true"><span class="ico"><svg><use href="#i-agenda"/></svg></span><div><b>Agendado</b><small>hoje, 18:00</small></div></div>
+      </div>
+    </section>
+
+    <div class="envelope origens">
+      <span>Corta de</span><strong>YouTube</strong><span class="sep"></span><strong>Twitch</strong><span class="sep"></span><strong>Kick</strong><span class="sep"></span><strong>Vídeos do seu PC</strong>
+      <span>· ao vivo ou já encerrado</span>
+    </div>
+
+    <!-- o que faz -->
+    <section class="envelope secao" id="o-que-faz">
+      <div class="cab-secao surge">
+        <span class="rotulo">O que ele faz</span>
+        <h2>O trabalho chato de cortar live, feito sozinho.</h2>
+        <p>Do link da live ao vídeo agendado no seu canal: o VICE CLIPS faz cada etapa sem você precisar abrir um editor.</p>
+      </div>
+      <div class="recursos">
+        <article class="cartao recurso largo surge">
+          <div class="txt">
+            <span class="ico"><svg aria-hidden="true"><use href="#i-estrela"/></svg></span>
+            <h3>Acha os melhores momentos</h3>
+            <p>Cada trecho da live ganha uma nota de 0 a 100. Ele ouve o que foi falado (reações, brigas, polícia e fuga, fails, risadas), lê o chat (gente diferente reagindo, pedindo "clipa") e mede o som e a imagem (gritos, explosões, ação na tela). Só vira corte o que passa da sua nota mínima.</p>
+          </div>
+          <div class="cartao" style="padding:20px;background:var(--superficie-2)" aria-label="Exemplo de nota de um corte">
+            <div class="notas" id="notas">
+              <div class="nota-linha"><span>Fala</span><span class="trilho"><i style="--v:92%"></i></span><b>92</b></div>
+              <div class="nota-linha"><span>Chat</span><span class="trilho"><i style="--v:88%"></i></span><b>88</b></div>
+              <div class="nota-linha"><span>Som</span><span class="trilho"><i style="--v:95%"></i></span><b>95</b></div>
+              <div class="nota-linha"><span>Imagem</span><span class="trilho"><i style="--v:81%"></i></span><b>81</b></div>
+            </div>
+            <div class="nota-total"><span>Fuga da polícia · nota do corte</span><b>91</b></div>
+          </div>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-celular"/></svg></span>
+          <h3>Corta em pé, já no formato</h3>
+          <p>Sai em 9:16, pronto para Shorts, Reels e TikTok. Marque a webcam uma vez: ela vai para cima e o jogo fica embaixo.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-legenda"/></svg></span>
+          <h3>Legenda automática</h3>
+          <p>Poucas palavras por vez, em caixa alta e com contorno, no estilo dos cortes que viralizam. Também sai o arquivo .srt.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-tesoura"/></svg></span>
+          <h3>Sem pausas mortas</h3>
+          <p>Os silêncios do meio do corte saem sozinhos. O vídeo fica direto ao ponto, do jeito que segura quem está rolando o feed.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-agenda"/></svg></span>
+          <h3>Agenda no seu canal</h3>
+          <p>Título, descrição e tags vêm preenchidos. Distribua os horários (10 por dia, por exemplo) e ele posta pelo YouTube Studio.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-pessoa"/></svg></span>
+          <h3>A cara do seu canal</h3>
+          <p>Coloque o logo em todos os cortes e, se quiser, um personagem apresentador na abertura e no final.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-camadas"/></svg></span>
+          <h3>Lives sugeridas na hora</h3>
+          <p>Sem link? O painel "Lives ao vivo agora" mostra as maiores lives de GTA no ar, em português e inglês. Um clique e ele começa a cortar.</p>
+        </article>
+        <article class="cartao recurso surge">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-chip"/></svg></span>
+          <h3>Se ajusta ao seu PC</h3>
+          <p>Mede o computador e escolhe sozinho a qualidade da legenda e quantos cortes faz por vez. Em PC simples, só vai mais devagar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- como funciona -->
+    <section class="envelope secao" id="como-funciona">
+      <div class="cab-secao surge">
+        <span class="rotulo">Como funciona</span>
+        <h2>Quatro passos. O resto ele faz.</h2>
+        <p>Na primeira vez um tour rápido mostra o caminho, e o app se ajusta sozinho ao seu PC.</p>
+      </div>
+      <ol class="passos" style="list-style:none;margin:0;padding:0">
+        <li class="cartao passo surge">
+          <span class="num">1</span>
+          <h3>Conecte seu YouTube</h3>
+          <p>Entre na conta do seu canal pela janela do app. O login fica guardado só no seu PC.</p>
+          <div class="demo" aria-hidden="true"><div class="conta"><span class="av">S</span><div><b style="font-size:13px">Seu canal</b><br><small style="color:var(--texto-3)">conectado</small></div><span class="ok">✓</span></div></div>
+        </li>
+        <li class="cartao passo surge">
+          <span class="num">2</span>
+          <h3>Cole o link da live</h3>
+          <p>YouTube, Twitch ou Kick, ao vivo ou já encerrada. Ou envie um vídeo do PC. Sem ideia? Ele sugere as maiores lives de GTA no ar.</p>
+          <div class="demo" aria-hidden="true"><div class="campo">twitch.tv/sua-live<span class="cursor"></span></div><span class="mini-btn">Começar a cortar</span></div>
+        </li>
+        <li class="cartao passo surge">
+          <span class="num">3</span>
+          <h3>Marque a webcam</h3>
+          <p>Desenhe um retângulo em cima da câmera do streamer. Dá para salvar e reusar na próxima live.</p>
+          <div class="demo" aria-hidden="true"><div class="quadro"><span class="ret"></span></div></div>
+        </li>
+        <li class="cartao passo surge">
+          <span class="num">4</span>
+          <h3>Os cortes aparecem sozinhos</h3>
+          <p>Enquanto a live roda, os cortes chegam prontos. Revise, agende e pronto. Até 10 lives ao mesmo tempo.</p>
+          <div class="demo" aria-hidden="true"><div class="fila">
+            <div class="mini-corte"><div class="q cena-3"><i class="cam"></i><b>QUE SUSTO</b></div></div>
+            <div class="mini-corte"><div class="q cena-2"><i class="cam"></i><b>OLHA ISSO</b></div></div>
+            <div class="mini-corte"><div class="q cena-5"><i class="cam"></i><b>FOI POR POUCO</b></div></div>
+          </div></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- legenda + agenda -->
+    <section class="envelope secao">
+      <div class="legenda-demo">
+        <div class="celular surge" aria-hidden="true">
+          <div class="tela">
+            <div class="cam"></div><div class="jogo"></div>
+            <span class="logo-c">seu canal</span>
+            <div class="leg" data-legenda="NÃO ACREDITO|QUE ELE FEZ|ISSO NA FRENTE|DA POLÍCIA|O CHAT|FOI À LOUCURA"><span>NÃO ACREDITO</span></div>
+            <div class="barra-yt"><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="surge">
+          <div class="cab-secao" style="margin-bottom:0">
+            <span class="rotulo">Do bruto ao feed</span>
+            <h2>Sai do jeito que o algoritmo gosta.</h2>
+            <p>O primeiro segundo decide se a pessoa fica. Por isso cada corte já sai com o que funciona em vídeo curto.</p>
+          </div>
+          <ul class="lista-check">
+            <li><span class="v"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Começa no lance.</b> O corte abre perto do momento que fez o chat explodir.</span></li>
+            <li><span class="v"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Legenda que acompanha a fala,</b> poucas palavras por vez, para ver sem som.</span></li>
+            <li><span class="v"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Webcam em cima, jogo embaixo,</b> sem bordas pretas.</span></li>
+            <li><span class="v"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Ficha de cada corte</b> com a nota e o motivo, para você escolher o que postar primeiro.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="envelope secao">
+      <div class="legenda-demo" style="grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)">
+        <div class="surge">
+          <div class="cab-secao" style="margin-bottom:0">
+            <span class="rotulo">Agendamento</span>
+            <h2>Encha a agenda do canal em minutos.</h2>
+            <p>Escolha os cortes, clique em "Títulos automáticos" e em "Distribuir horários". O VICE CLIPS abre o YouTube Studio e agenda um por um, com os melhores primeiro. Também dá para publicar na hora.</p>
+          </div>
+        </div>
+        <div class="cartao agenda-mock surge" aria-label="Exemplo da lista de agendamento" role="img">
+          <div class="item-ag"><span class="mq cena-1"></span><div><b>ELE NÃO ESPERAVA ISSO 😳</b><small>nota 91 · #shorts #gta</small></div><span class="quando feito">✓ Agendado</span></div>
+          <div class="item-ag"><span class="mq cena-2"></span><div><b>A fuga mais insana da live</b><small>nota 88 · #shorts #gta</small></div><span class="quando">hoje 20:00</span></div>
+          <div class="item-ag"><span class="mq cena-3"></span><div><b>O chat não acreditou nisso</b><small>nota 84 · #shorts</small></div><span class="quando">amanhã 08:00</span></div>
+          <div class="item-ag"><span class="mq cena-4"></span><div><b>Que susto foi esse?</b><small>nota 79 · #shorts</small></div><span class="quando">amanhã 10:00</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- números -->
+    <section class="envelope secao">
+      <div class="numeros">
+        <div class="cartao numero surge"><b><em>10</em> lives</b><span>cortadas ao mesmo tempo</span></div>
+        <div class="cartao numero surge"><b><em>0</em>–100</b><span>nota para cada momento</span></div>
+        <div class="cartao numero surge"><b><em>3</em> plataformas</b><span>YouTube, Twitch e Kick, mais vídeos do PC</span></div>
+        <div class="cartao numero surge"><b><em>100%</em> local</b><span>sem IA na nuvem e sem servidor pago</span></div>
+      </div>
+    </section>
+
+    <!-- requisitos -->
+    <section class="envelope secao" id="requisitos">
+      <div class="cab-secao surge">
+        <span class="rotulo">Antes de baixar</span>
+        <h2>Requisitos e instalação</h2>
+        <p>Não precisa instalar mais nada: o motor de vídeo e os modelos de legenda já vêm dentro do programa.</p>
+      </div>
+      <div class="duas">
+        <div class="cartao surge">
+          <h3>O que você precisa</h3>
+          <ul class="req">
+            <li><span>Sistema</span>Windows 10 ou 11, 64 bits</li>
+            <li><span>Navegador</span>Microsoft Edge (já vem no Windows) ou Google Chrome</li>
+            <li><span>Memória</span>8 GB recomendados (funciona com 4 GB)</li>
+            <li><span>Espaço</span>2 GB para o programa + cerca de 1,5 GB por hora de live enquanto corta</li>
+            <li><span>Internet</span>Para lives, vídeos por link e para agendar</li>
+          </ul>
+        </div>
+        <div class="cartao surge">
+          <h3>Como instalar</h3>
+          <ol class="instalar">
+            <li><span>Baixe o <b>VICE CLIPS Setup</b> e dê dois cliques nele.</span></li>
+            <li><span>Se aparecer <b>"O Windows protegeu o computador"</b>, clique em "Mais informações" e depois em "Executar assim mesmo". Isso acontece com todo programa novo.</span></li>
+            <li><span>Siga o assistente. Instala só para o seu usuário, <b>sem pedir senha de administrador</b>.</span></li>
+            <li><span>Abra pelo menu Iniciar, conecte o YouTube e <b>cole o link da primeira live</b>.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- download -->
+    <section class="envelope" id="baixar">
+      <div class="download surge">
+        <span class="simbolo" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+        <h2>Baixe o VICE CLIPS</h2>
+        <p>Instale, cole o link da live e deixe os cortes chegarem.</p>
+        <div class="acoes">
+          <a class="btn principal grande" href="#baixar" data-download><svg aria-hidden="true"><use href="#i-baixar"/></svg>Baixar para Windows</a>
+        </div>
+        <div class="ficha">
+          <span class="chip">Versão <span data-versao>2.1.0</span></span>
+          <span class="chip">Instalador .exe · <span data-tamanho>690 MB</span></span>
+          <span class="chip">Windows 10 e 11 · 64 bits</span>
+        </div>
+        <details class="hash">
+          <summary>Conferir o arquivo (SHA-256)</summary>
+          <code data-sha256>B3C12898EE048413B69FD139E7E0F22C94C6956454E4A3EC35883E896548F6FD</code>
+        </details>
+      </div>
+    </section>
+
+    <!-- perguntas -->
+    <section class="envelope secao" id="perguntas">
+      <div class="cab-secao centro surge">
+        <span class="rotulo">Perguntas</span>
+        <h2>Ficou alguma dúvida?</h2>
+      </div>
+      <div class="faq">
+        <details class="cartao surge"><summary>Precisa de um PC muito forte?</summary><p>Não. Na primeira vez o app mede o seu PC e escolhe sozinho a qualidade da legenda, quantos cortes faz por vez e a resolução. Em PC mais simples ele só vai mais devagar. Dá para refazer o ajuste em Configurações › Este PC.</p></details>
+        <details class="cartao surge"><summary>Usa inteligência artificial na nuvem?</summary><p>Não. A escolha dos momentos e a legenda rodam no seu computador. Seus vídeos não são enviados para nenhum servidor nosso: o único lugar para onde eles vão é o seu canal, quando você agenda.</p></details>
+        <details class="cartao surge"><summary>Funciona com live que já acabou?</summary><p>Sim. Escolha "Live que já acabou" e cole o link. Ele baixa a live inteira, analisa e entrega os melhores cortes. Também funciona com vídeos comuns e com arquivos do seu PC.</p></details>
+        <details class="cartao surge"><summary>Preciso deixar a janela aberta?</summary><p>Não. Fechar a janela não para os cortes, eles continuam em segundo plano. Para parar tudo, use "Desligar" no menu do app.</p></details>
+        <details class="cartao surge"><summary>Por que precisa conectar a conta do YouTube?</summary><p>É por ela que o app agenda e publica os cortes no seu canal, usando o próprio YouTube Studio. O login fica guardado só no seu PC e você pode desconectar quando quiser.</p></details>
+        <details class="cartao surge"><summary>O Windows mostrou um aviso ao abrir o instalador. É seguro?</summary><p>O aviso "O Windows protegeu o computador" aparece com programas novos que ainda não têm reputação no Windows. Se quiser conferir que o arquivo é o original, compare o código SHA-256 mostrado na seção de download.</p></details>
+        <details class="cartao surge"><summary>Posso cortar a live de qualquer streamer?</summary><p>Corte vídeos de outros criadores só com a permissão deles. Lives só para inscritos não podem ser cortadas. Na Twitch, os anúncios da live são pulados.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="envelope">
+      <div class="linha">
+        <a class="marca" href="#inicio"><span class="simbolo" aria-hidden="true"><svg><use href="#i-play"/></svg></span><b>VICE CLIPS</b></a>
+        <a class="btn fantasma" href="#baixar" data-download>Baixar para Windows</a>
+      </div>
+      <p>VICE CLIPS é um programa independente. Não é afiliado nem endossado por Rockstar Games, Google/YouTube, Twitch ou Kick; os nomes citados pertencem aos seus donos.</p>
+      <p>Feito com software livre: ffmpeg, yt-dlp, faster-whisper, Node.js, Playwright e Python. Fontes Figtree e Montserrat (SIL Open Font License).</p>
+    </div>
+  </footer>
+</div>
+
+<div class="aviso vidro" id="aviso" role="status" aria-live="polite"><b>O download ainda não está disponível</b><span>O link vai ser liberado em breve.</span></div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
